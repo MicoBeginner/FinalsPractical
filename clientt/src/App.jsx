@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+  const API_URL = "/api";
   const [students, setStudents] = useState([]);
   const [name, setName] = useState("");
   const [course, setCourse] = useState("");
