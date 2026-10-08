@@ -27,7 +27,6 @@ function App() {
     setStudents(response.data);
   };
 
-  
 
   const editStudent = (student) => {
     setEditingId(student._id);
@@ -42,7 +41,7 @@ function App() {
       course,
       age
     });
-
+    
     const response = await axios.get("http://localhost:5000/students");
     setStudents(response.data);
     setEditingId(null);
